@@ -240,3 +240,18 @@ input {
   color: #757575;
   text-decoration: line-through;
 }
+
+@media screen and (max-width: 970px){
+  .box {
+    width: 95%;
+  }
+  input {
+    width: 55%;
+    font-size: 20px;
+  }
+  #addTodo {
+    width: 35%;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+}
