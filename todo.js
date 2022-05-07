@@ -29,6 +29,8 @@ addTodo.addEventListener("click", () => {
     // 渲染到HTML
     render(todoList);
   }
+  // 清空输入框
+  input.value = '';
 });
 
 // 渲染到HTML
