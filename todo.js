@@ -30,7 +30,7 @@ addTodo.addEventListener("click", () => {
     render(todoList);
   }
   // 清空输入框
-  input.value = '';
+  input.value = "";
 });
 
 // 渲染到HTML

@@ -1,46 +1,127 @@
 /* CSS Initialization */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* CSS Start */
@@ -50,24 +131,24 @@ table {
 }
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('iconfont/icomoon.eot?kngsab');
-  src:  url('iconfont/icomoon.eot?kngsab#iefix') format('embedded-opentype'),
-    url('iconfont/icomoon.ttf?kngsab') format('truetype'),
-    url('iconfont/icomoon.woff?kngsab') format('woff'),
-    url('iconfont/icomoon.svg?kngsab#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("iconfont/icomoon.eot?kngsab");
+  src: url("iconfont/icomoon.eot?kngsab#iefix") format("embedded-opentype"),
+    url("iconfont/icomoon.ttf?kngsab") format("truetype"),
+    url("iconfont/icomoon.woff?kngsab") format("woff"),
+    url("iconfont/icomoon.svg?kngsab#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 body {
-  background-color: #FCF8E8;
+  background-color: #fcf8e8;
 }
 
 header {
   height: 100px;
-  background-color: #ECDFC8;
+  background-color: #ecdfc8;
   text-align: center;
 }
 
@@ -91,7 +172,6 @@ input {
   color: #757575;
 }
 
-
 #addTodo {
   float: left;
   width: 20%;
@@ -100,11 +180,11 @@ input {
   margin-left: 15px;
   border: none;
   border-radius: 40px;
-  background-color: #ECB390;
+  background-color: #ecb390;
   cursor: pointer;
   font-size: 30px;
   font-family: IBMPlexSerif, Arial, Helvetica, sans-serif;
-  color: #FCF8E8;
+  color: #fcf8e8;
   margin-top: 25px;
 }
 
@@ -123,15 +203,15 @@ input {
 }
 
 .done .checked {
-  color: #8C8C8C;
+  color: #8c8c8c;
 }
 
 .done .delete {
-  color: #6C6C6C;
+  color: #6c6c6c;
 }
 
 .delete {
-  color: #DF7861;
+  color: #df7861;
 }
 
 .todo-text {
@@ -152,7 +232,7 @@ input {
 .separator {
   width: 80%;
   height: 2px;
-  background-color: #ECDFC8;
+  background-color: #ecdfc8;
   margin: 0 auto;
 }
 
