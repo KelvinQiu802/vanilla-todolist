@@ -13,6 +13,9 @@ if (localStorage.getItem("todo-list")) {
   var todoList = [];
 }
 
+// 聚焦input
+input.focus();
+
 // 构造函数
 function createTodo(content, status) {
   this.content = content;
