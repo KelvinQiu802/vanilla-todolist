@@ -1,0 +1,162 @@
+/* CSS Initialization */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Start */
+@font-face {
+  font-family: IBMPlexSerif;
+  src: url(font/IBMPlexSerif-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('iconfont/icomoon.eot?kngsab');
+  src:  url('iconfont/icomoon.eot?kngsab#iefix') format('embedded-opentype'),
+    url('iconfont/icomoon.ttf?kngsab') format('truetype'),
+    url('iconfont/icomoon.woff?kngsab') format('woff'),
+    url('iconfont/icomoon.svg?kngsab#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+body {
+  background-color: #FCF8E8;
+}
+
+header {
+  height: 100px;
+  background-color: #ECDFC8;
+  text-align: center;
+}
+
+.box {
+  width: 60%;
+  background-color: pink;
+  margin: 0 auto;
+}
+
+input {
+  float: left;
+  width: 70%;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  padding-left: 15px;
+  font-size: 25px;
+  outline: none;
+  margin-top: 25px;
+  font-family: IBMPlexSerif, Arial, Helvetica, sans-serif;
+  color: #757575;
+}
+
+
+#addTodo {
+  float: left;
+  width: 20%;
+  height: 48px;
+  line-height: 45px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 40px;
+  background-color: #ECB390;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: IBMPlexSerif, Arial, Helvetica, sans-serif;
+  color: #FCF8E8;
+  margin-top: 25px;
+}
+
+#addTodo:hover {
+  background-color: #e5a882;
+}
+
+.uncheck,
+.checked,
+.delete {
+  position: relative;
+  font-family: icomoon;
+  font-size: 30px;
+  top: 3px;
+  cursor: pointer;
+}
+
+.done .checked {
+  color: #8C8C8C;
+}
+
+.done .delete {
+  color: #6C6C6C;
+}
+
+.delete {
+  color: #DF7861;
+}
+
+.todo-text {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.todo {
+  margin-left: 25vw;
+  margin-top: 20px;
+}
+
+.todo li {
+  margin-bottom: 20px;
+}
+
+.separator {
+  width: 80%;
+  height: 2px;
+  background-color: #ECDFC8;
+  margin: 0 auto;
+}
+
+.done li i {
+  color: #757575;
+  text-decoration: line-through;
+}
