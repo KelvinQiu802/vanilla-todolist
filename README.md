@@ -15,4 +15,4 @@
 ## About Me
 - [My Blog](https://codingkelvin.fun)
 - [Useful Website for learing](https://docs.codingkelvin.fun)
-- [Email Me](kelvinqiu802@outlook.com)
+- Email Me: <kelvinqiu802@outlook.com>
