@@ -153,7 +153,7 @@ header {
 }
 
 .box {
-  width: 60%;
+  width: 700px;
   background-color: pink;
   margin: 0 auto;
 }
@@ -243,7 +243,7 @@ input {
 
 @media screen and (max-width: 970px){
   .box {
-    width: 95%;
+    width: 310px;
   }
   input {
     width: 55%;
@@ -254,7 +254,7 @@ input {
   }
   #addTodo {
     width: 30%;
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 10px;
     margin-top: 28px;
   }
