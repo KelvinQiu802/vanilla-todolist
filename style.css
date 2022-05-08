@@ -221,8 +221,8 @@ input {
 }
 
 .todo {
-  margin-left: 25vw;
-  margin-top: 20px;
+  margin: 20px 10vw 0 22vw;
+  word-wrap: break-word;
 }
 
 .todo li {
@@ -247,7 +247,11 @@ input {
   }
   input {
     width: 55%;
-    font-size: 20px;
+    font-size: 20px; 
+    margin-left: 3px;
+  }
+  .todo {
+    margin-left: 11vw;
   }
   #addTodo {
     width: 35%;
