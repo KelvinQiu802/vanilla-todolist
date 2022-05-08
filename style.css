@@ -248,13 +248,12 @@ input {
   input {
     width: 55%;
     font-size: 20px; 
-    margin-left: 3px;
   }
   .todo {
     margin-left: 11vw;
   }
   #addTodo {
-    width: 35%;
+    width: 30%;
     font-size: 20px;
     margin-left: 10px;
     margin-top: 28px;
