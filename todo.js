@@ -43,6 +43,7 @@ function render(todoList) {
   // 清空
   todo.innerHTML = "";
   done.innerHTML = "";
+  // 添加元素到DOM
   for (const todoObj of todoList) {
     if (todoObj.status === "todo") {
       // 添加到todo中
@@ -65,7 +66,6 @@ function render(todoList) {
   // 渲染done
   done.innerHTML = done_element.join("");
   // 设置事件
-  console.log("死循环");
   setEvents();
   // 添加到localStorage
   localStorage.setItem("todo-list", JSON.stringify(todoList));
@@ -84,7 +84,7 @@ function deleteEvent() {
   const deleteBtns = document.querySelectorAll(".delete");
   for (const deleteBtn of deleteBtns) {
     deleteBtn.addEventListener("click", function () {
-      // 从DOM中删除
+      // 直接从从DOM中删除
       this.parentNode.parentNode.removeChild(this.parentNode);
       // 从对象列表中移除
       for (const todo of todoList) {
