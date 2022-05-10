@@ -241,7 +241,7 @@ input {
   text-decoration: line-through;
 }
 
-@media screen and (max-width: 970px){
+@media screen and (max-width: 750px){
   .box {
     width: 310px;
   }
