@@ -142,6 +142,7 @@ function checkedEvent() {
 function edit() {
   const todos = document.querySelectorAll('i');
   for (const i of todos) {
+    // 双击事件
     i.addEventListener('dblclick', function() {
       // 禁用双击选中
       window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
@@ -150,7 +151,7 @@ function edit() {
       i.innerHTML = `<input type="text" value="${content}" class="edit"/>`;
       // 获取修改前内容
       var previous = i.firstElementChild.value;
-      // 自动聚焦
+      // 自动聚焦, 自动选择
       i.firstChild.focus();
       i.firstChild.select();
 
@@ -175,7 +176,7 @@ function edit() {
           this.blur();
         }
       })
-      
+
     })
   }
 }
