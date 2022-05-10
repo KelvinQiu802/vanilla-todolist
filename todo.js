@@ -159,7 +159,12 @@ function edit() {
       const editBox = i.firstElementChild;
       editBox.addEventListener('blur', function() {
         const current = editBox.value
-        i.innerHTML = current;
+        // 判断文本框是否为空并赋值
+        if (current != '') {
+          i.innerHTML = current;
+        } else {
+          i.innerHTML = previous;
+        }
         // 更新todoList数据
         for (const todo of todoList) {
           if (todo.content == previous) {
