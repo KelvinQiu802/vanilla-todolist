@@ -76,6 +76,7 @@ function setEvents() {
   deleteEvent();
   uncheckEvent();
   checkedEvent();
+  edit();
 }
 
 // 删除事件
@@ -136,6 +137,50 @@ function checkedEvent() {
     });
   }
 }
+
+// 双击编辑事件
+function edit() {
+  const todos = document.querySelectorAll('i');
+  for (const i of todos) {
+    i.addEventListener('dblclick', function() {
+      // 禁用双击选中
+      window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+      // 显示文本框
+      let content = i.innerHTML;
+      i.innerHTML = `<input type="text" value="${content}" class="edit"/>`;
+      // 获取修改前内容
+      var previous = i.firstElementChild.value;
+      // 自动聚焦
+      i.firstChild.focus();
+      i.firstChild.select();
+
+      // 当文本框失去聚焦事件
+      const editBox = i.firstElementChild;
+      editBox.addEventListener('blur', function() {
+        const current = editBox.value
+        i.innerHTML = current;
+        // 更新todoList数据
+        for (const todo of todoList) {
+          if (todo.content == previous) {
+            todo.content = current;
+          }
+        }
+        // 更新缓存数据
+        localStorage.setItem("todo-list", JSON.stringify(todoList));
+      })
+
+      // enter退出事件
+      editBox.addEventListener('keyup', function(e) {
+        if (e.key == 'Enter') {
+          this.blur();
+        }
+      })
+      
+    })
+  }
+}
+
+
 
 // 检查todo重复
 function checkRepeat(todoList) {

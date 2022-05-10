@@ -158,7 +158,7 @@ header {
   margin: 0 auto;
 }
 
-input {
+.inputTodo {
   float: left;
   width: 70%;
   height: 45px;
@@ -241,7 +241,15 @@ input {
   text-decoration: line-through;
 }
 
-@media screen and (max-width: 750px){
+.edit {
+  position: relative;
+  bottom: 1px;
+  height: 25px;
+  font-size: 25px;
+  outline-color: #E3B595;
+}
+
+@media screen and (max-width: 700px){
   .box {
     width: 310px;
   }
